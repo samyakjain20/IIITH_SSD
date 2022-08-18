@@ -1,0 +1,2 @@
+select final.Mgr_ssn, final.Dnumber, count(*) as 'Number of Dependents' from (select id.Mgr_ssn, id.Dnumber from DEPENDENT INNER JOIN (Select Dnumber, Mgr_ssn from DEPARTMENT where Dnumber in (Select loc.Dnumber from (select Dnumber, count(*) as no_location from DEPT_LOCATIONS group by Dnumber) as loc where loc.no_location > 2)) as id where DEPENDENT.Essn = id.Mgr_ssn) as final group by final.Dnumber;
+
