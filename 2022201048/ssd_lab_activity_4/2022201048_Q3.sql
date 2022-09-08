@@ -1,6 +1,0 @@
-CREATE DEFINER=`root`@`localhost` PROCEDURE `getNamesGrades`()
-BEGIN
-	SELECT CUST_NAME, GRADE FROM (SELECT CUST_NAME, GRADE, (OPENING_AMT + RECEIVE_AMT) AS sum FROM customer) as amt WHERE sum > 10000;
-END
-
-CALL getNamesGrades;

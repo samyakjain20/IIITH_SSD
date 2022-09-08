@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <meta charset="UTH-8">
+        <title>Student Records</title>
+        <link rel="stylesheet" href="style.css"></link>
+    </head>
+    <body>
+        <!-- <h1>Hello</h1> -->
+        <div class="container2">
+            <h1>Student Records</h1>
+            
+            
+            <div class="myTable"></div>
+            <table id="myTable">
+                <tr>
+                    <th>Roll No.</th>
+                    <th>Name</th>
+                </tr>
+                <tr>
+                </tr>
+            </table>
+              
+            <div >
+                <form >
+                    <input class="newEle"  type="text" id="roll" name="roll" placeholder="Enter Roll" required>
+                    <input class="newEle"  type="text" id="name" name="name" placeholder="Enter Name" required>
+                </form>
+            </div>
+            <button onclick="myCreateFunction()" class="addElement">Add row</button>
+            <button onclick="myDeleteFunction()" class="deleteElement">Delete row</button>
+            </div>
+        
+
+        <!-- <form >
+          <input type="text" id="roll" name="roll" placeholder="Enter Roll" required>
+          <input type="text" id="name" name="name" placeholder="Enter Name" required>
+        </form>
+        <button onclick="myCreateFunction()">Add row</button>
+        <button onclick="myDeleteFunction()">Delete row</button> -->
+
+
+
+    <script>
+        var cnt = 1;
+        function myCreateFunction() {
+            var table = document.getElementById("myTable");
+            var row = table.insertRow(cnt++);
+        
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+        
+            cell1.innerHTML = document.getElementById("roll").value;
+            cell2.innerHTML = document.getElementById("name").value;
+            document.getElementById("roll").value = "";
+            document.getElementById("name").value = "";
+        }
+        
+        function myDeleteFunction() {
+            if(cnt>1){
+                document.getElementById("myTable").deleteRow(--cnt);
+            }
+        }
+    </script>
+    </body>
+
+</html>

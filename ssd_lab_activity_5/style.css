@@ -1,0 +1,100 @@
+body{
+    background-image: linear-gradient(rgb(183, 213, 219), rgb(222, 235, 238));
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    background-color: #fff;
+    text-align: center;
+
+    width: 500px;    
+    left: 30%;
+    top: 30%;
+    position: absolute;
+
+    padding: 20px;
+
+    border: 1px;
+    border-radius: 7px;
+    z-index: 2;
+    /* border-shadow:; */
+}
+
+input{
+    margin: 10px;
+}
+
+#username:hover{
+    border-color: rgb(164, 68, 68);
+    background-color: rgb(156, 190, 216);
+}
+#password:hover{
+    border-color: rgb(164, 68, 68);
+    background-color: rgb(156, 190, 216);
+}
+.loginButton{
+    width: auto;
+    padding: 10px 80px;
+    background-color: rgb(62, 131, 184);
+    color: #fff;
+    border: 2px #fff;
+    border-radius: 4px;
+}
+
+
+.container2{
+    text-align: center;
+
+    width: 500px;    
+    left: 30%;
+    top: 30%;
+    position: absolute;
+
+    padding: 20px;
+
+    border: 1px;
+    border-radius: 7px;
+    z-index: 2;
+    /* border-shadow:; */
+}
+
+.addElement{
+    width: auto;
+    padding: 10px 50px;
+    background-color: rgb(28, 136, 34);
+    color: #fff;
+    border: 2px #fff;
+    border-radius: 4px;
+}
+
+.deleteElement{
+    width: auto;
+    padding: 10px 50px;
+    background-color: rgb(234, 41, 41);
+    color: #fff;
+    border: 2px #fff;
+    border-radius: 4px;
+}
+
+#myTable{
+    padding: 10px 50px;
+}
+.newEle{
+    width: 220px;
+    margin: 10px 5px !important;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, td, th {
+    border: 1px solid black;
+}
+  
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
