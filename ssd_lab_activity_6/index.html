@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"></link>
+    <title>Lab 6</title>
+</head>
+<body>
+    <div class="container">
+        <!-- return -->
+        <form name="myForm">
+            <label for="name">Manager Name:</label> 
+            <input type="text" name="name" id="fname" required>
+            <br><br>
+        
+            <label for="email">Group Email:</label> 
+            <input type="text" name="email" id="femail" required>
+            <label id="emailerror"></label>
+            <br><br>
+        
+            <label for="serverusername">Server Username:</label> 
+            <input type="text" name="serverusername" onkeypress="validateUsrname()" onkeyup="validateUsrname()" id="fusrname" required>
+            <label id="usrerror"></label>
+            <br><br>
+        
+            <label for="password">Password:</label> 
+            <input type="password" name="password" id="fpassword" required>
+            <br><br>
+        
+            <label for="cpassword">Confirm Password:</label> 
+            <input type="password" name="cpassword" id="fcpassword" required>
+            <label id="passerror"></label>
+            <br><br>
+        
+        </form>
+        <button type="submit" value="submit" onclick="validateForm()">Submit</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
