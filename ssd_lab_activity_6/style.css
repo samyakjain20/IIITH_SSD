@@ -1,0 +1,16 @@
+body{
+    padding: 50px;
+    background-color: #fff;
+}
+
+.container label{
+    font-weight: 600;
+    padding-right: 40px;
+} 
+
+.container input{
+    padding-left: auto;
+}
+.container button{
+    background-color: rgb(26, 181, 157);
+}
